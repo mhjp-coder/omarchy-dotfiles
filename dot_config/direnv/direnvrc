@@ -1,0 +1,18 @@
+function use_standard-python() {
+    # Load the .env file if it exists
+    dotenv_if_exists
+    # Load the .envrc.local file if it exists
+    # This is for extra config, .envrc is still loaded by default
+    source_env_if_exists .envrc.local
+    # Load the venv and create it if it doesn't exist
+    use_venv
+    # use update project packages with UV
+    #uv sync
+}
+
+function use_venv() {
+    if [ ! -d .venv ]; then
+        uv venv
+    fi
+    source .venv/bin/activate
+}
