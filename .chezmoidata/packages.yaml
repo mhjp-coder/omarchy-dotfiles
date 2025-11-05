@@ -1,11 +1,10 @@
 packages:
-  linux:
-    pacman:
-      - "arp-scan"
-      - "chezmoi"
-      - "direnv"
-      - "fish"
-      - "git-delta"
-      - "nmap"
-      - "nwg-icon-picker"
-      - "ttf-noto-nerd"
+  - "arp-scan"
+  - "chezmoi"
+  - "direnv"
+  - "fish"
+  - "git-delta"
+  - "nmap"
+  - "nwg-icon-picker"
+  - "openai-codex-autoup-bin"
+  - "ttf-noto-nerd"
