@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=VIA
+Comment=VIA
+Exec=~/.local/bin/via-enable.sh
+Terminal=true
+Type=Application
+Icon=/home/mparsons/.local/share/applications/icons/VIA.png
+StartupNotify=true
