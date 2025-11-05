@@ -37,7 +37,6 @@ alias rmpkg     'yay -Rcns '
 alias psmem     'ps auxf | sort -nr -k 4'
 alias psmem10   'ps auxf | sort -nr -k 4 | head -10'
 alias grep      'rg'
-alias hw        'hwinfo --short'
 
 # Chezmoi
 alias cz        'chezmoi '
