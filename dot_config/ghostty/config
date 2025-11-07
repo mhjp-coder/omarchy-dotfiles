@@ -3,7 +3,7 @@ config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
 #command = /usr/bin/fish --login --interactive
 
 # Font
-font-family = "FiraCode Nerd Font Mono"
+font-family = "NotoSansM Nerd Font Mono"
 font-style = Regular
 font-size = 14
 
@@ -16,7 +16,7 @@ resize-overlay = never
 gtk-toolbar-style = flat
 
 # Cursor styling
-cursor-style = "block"
+cursor-style = "bar"
 cursor-style-blink = false
 
 # Cursor styling + SSH session terminfo
