@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Codex
-Comment=Codex
-Exec=$TERMINAL --class=TUI.tile -e codex -m gpt-5-codex
-Terminal=false
-Type=Application
-Icon=/home/mparsons/.local/share/applications/icons/Codex.png
-StartupNotify=true

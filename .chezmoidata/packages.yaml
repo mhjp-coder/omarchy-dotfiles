@@ -1,10 +1,6 @@
 packages:
-  - "arp-scan"
   - "chezmoi"
-  - "direnv"
   - "fish"
   - "git-delta"
   - "nmap"
   - "nwg-icon-picker"
-  - "openai-codex-autoup-bin"
-  - "ttf-noto-nerd"
