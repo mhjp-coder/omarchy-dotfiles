@@ -10,8 +10,8 @@ if status is-interactive
     set -x MANPAGER "sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 
     # Direnv
-    set -g direnv_fish_mode eval_on_arrow
-    direnv hook fish | source
+#    set -g direnv_fish_mode eval_on_arrow
+#    direnv hook fish | source
 
     # Zoxide
     zoxide init fish --cmd cd | source
