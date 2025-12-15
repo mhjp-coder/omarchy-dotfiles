@@ -1,5 +1,5 @@
 {{- $email := promptStringOnce . "email" "Email address" -}}
-{{- $choices := list "work" "home" -}}
+{{- $choices := list "work" "home" "framework" -}}
 {{- $machine_location := promptChoiceOnce . "machine_location" "Machine Location" $choices -}}
 {{- $name := promptStringOnce . "name" "Name for Git commits" -}}
 {{- $git_hub_username := promptStringOnce . "git_hub_username" "Your GitHub Username" -}}

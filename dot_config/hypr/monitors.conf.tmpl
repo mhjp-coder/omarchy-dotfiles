@@ -4,22 +4,33 @@
 
 # Optimized for retina-class 2x displays, like 13" 2.8K, 27" 5K, 32" 6K.
 #env = GDK_SCALE,1
-{{ if eq .machine_location "home" -}}
-monitor = DP-2,     2560x1440@75,   0x0,        1,  transform, 3
-monitor = DP-1,     3440x1440@60,   1440x720,  1
-monitor = HDMI-A-1, 2560x1440@144,  4880x720,  1
-{{ end -}}
 
 # Good compromise for 27" or 32" 4K monitors (but fractional!)
 # env = GDK_SCALE,1.75
 # monitor=,preferred,auto,1.666667
 
-# Straight 1x setup for low-resolution displays like 1080p or 1440p
-# env = GDK_SCALE,1
-{{ if eq .machine_location "work" -}}
-monitor=,preferred,auto,1
+
+# Home Desktop Tripple Monitor
+{{ if eq .machine_location "home" -}}
+
+monitor = DP-2,     2560x1440@75,   0x0,       1,  transform, 3
+monitor = DP-1,     3440x1440@60,   1440x720,  1
+monitor = HDMI-A-1, 2560x1440@144,  4880x720,  1
+
 {{ end -}}
 
-# Example for Framework 13 w/ 6K XDR Apple display
-# monitor = DP-5, 6016x3384@60, auto, 2
-# monitor = eDP-1, 2880x1920@120, auto, 2
+
+# Work Desktop Dual 27" ViewSonic
+{{ if eq .machine_location "work" -}}
+
+monitor=,preferred,auto,1
+
+{{ end -}}
+
+
+# Framework 16"
+{{ if eq .machine_location "framework" -}}
+
+monitor = eDP-1, 2560x1600@165, auto, 1
+
+{{ end -}}
