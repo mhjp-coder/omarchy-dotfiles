@@ -24,4 +24,5 @@ end
 
 # bun
 set --export BUN_INSTALL "$HOME/.local/share/reflex/bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+fish_add_path $BUN_INSTALL/bin
+fish_add_path $HOME/go/bin
